@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Welcome Student!</h1>
+        <p>Enter your name and course ID</p>
+
+        <form action="/" method="POST">
+            <input type="text" placeholder="Enter your Name" name="firstName"><br><br>
+
+            <input type="text" placeholder="Enter your course ID" name="courseID"><br><br>
+
+            <input type="email" placeholder="Enter your email" name="userEmail">
+            
+            <br><br>
+
+            <input type="submit" value="Submit">
+
+            {{#each errorMsgs as |error|}}
+                <p style="color: red;">{{error.msg}}</p>
+            {{/each}}
+        </form>
+    </body>
+</html>

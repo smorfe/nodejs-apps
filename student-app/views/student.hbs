@@ -1,0 +1,18 @@
+<ul>
+    {{#each studentsData as |student|}}
+        <li>
+            {{#if student.name}}
+                <p><strong>Student Name:</strong> {{student.name}}</p>
+            {{/if}}
+
+            {{#if student.courseID}}
+                <p><strong>Course ID:</strong> {{student.courseID}}</p>
+            {{/if}}
+
+            {{#if student.email}}
+                <p><strong>Email Address:</strong> {{student.email}}</p>
+            {{/if}}
+
+        </li>
+    {{/each}}
+</ul>

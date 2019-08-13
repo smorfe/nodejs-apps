@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+    <body>
+        {{> header}}
+        
+        <table>
+            <tr>
+                <td>
+                    <strong>Country Name: </strong>
+                </td>
+                <td>
+                    {{formatTitle countryName}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Country Code: </strong>
+                </td>
+                <td>
+                    {{countryCode}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img 
+                        src="{{iconCode}}"
+                        width="20px"
+                        height="20px"
+                        style="vertical-align: middle">
+                    <strong>{{textIcon}} :</strong>
+                </td>
+                <td>
+                    1 {{fromCurr}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>{{toCurr}} </strong>
+                </td>
+                <td>
+                    {{formatMoney inCad}} {{toCurr}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Last Updated: </strong>
+                </td>
+                <td>
+                    {{lastUpdate}}
+                </td>
+            </tr>
+        </table>
+
+    </body>
+</html>

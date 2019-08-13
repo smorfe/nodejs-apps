@@ -1,0 +1,17 @@
+{
+  "name": "hw4-07022019",
+  "version": "1.0.0",
+  "description": "This is HW 4",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shiela",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.0.4",
+    "lodash": "^4.17.11",
+    "request": "^2.88.0"
+  }
+}
